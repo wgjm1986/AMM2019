@@ -11,11 +11,11 @@ There are three different scripts in this repo:
 To get this repo running locally:
 
 	git clone https://github.com/wgjm1986/AMM2019
+	cd AMM2019
 	cp .env.example .env
 
 ...then add your FRED API key to .env, then
 
-	cd AMM2019
 	conda env create -f environment.yml
 	conda activate AMM2019
 	jupyter notebook
