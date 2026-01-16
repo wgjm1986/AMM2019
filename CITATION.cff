@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated paper below."
+type: software
+title: "Replication code for: Why did the q theory of investment start working?"
+authors:
+  - family-names: Andrei
+    given-names: Daniel
+  - family-names: Mann
+    given-names: William
+  - family-names: Moyen
+    given-names: Nathalie
+license: MIT
+repository-code: "https://github.com/wgjm1986/AMM2019"
+url: "https://wgjm1986.github.io/AMM2019/"
+
+preferred-citation:
+  type: article
+  title: "Why did the q theory of investment start working?"
+  authors:
+    - family-names: Andrei
+      given-names: Daniel
+    - family-names: Mann
+      given-names: William
+    - family-names: Moyen
+      given-names: Nathalie
+  journal: "Journal of Financial Economics"
+  volume: 133
+  issue: 2
+  year: 2019
+  pages: "251-272"
+  doi: "10.1016/j.jfineco.2019.03.007"
+
