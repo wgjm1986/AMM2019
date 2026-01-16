@@ -7,3 +7,17 @@ There are three different scripts in this repo:
 	- There are two minor typos noted in the code, which can be corrected with negligible impact on the results. ([PDF of the output with these typos corrected](https://wgjm1986.github.io/AMM2019/Code/AMM2019%20-%20Archived%20data%20-%20errata%20corrected.pdf))
 - [AMM2019 - FRED API data.ipynb](https://wgjm1986.github.io/AMM2019/Code/AMM2019%20-%20FRED%20API%20data.ipynb) - This notebook implements the same algorithm as the above, but downloading all data from FRED via API, which allows the results to be updated through the most recent available data. Due to revisions of historical data since the publication of our paper, the data downloaded by this code will not match the data that we archived. ([PDF](https://wgjm1986.github.io/AMM2019/Code/AMM2019%20-%20FRED%20API%20data.pdf))
 - [AMM2019 - FRED API data - simplified.ipynb](https://wgjm1986.github.io/AMM2019/Code/AMM2019%20-%20FRED%20API%20data%20-%20simplified.ipynb) - This notebook removes many steps from Hall's algorithm to arrive at a process for constructing Tobin's Q and investment that is much simpler to follow, but yields qualitatively similar conclusions, and is closer in spirit to the way investment-Q regressions are often run in Compustat. See further comments in the file. ([PDF](https://wgjm1986.github.io/AMM2019/Code/AMM2019%20-%20FRED%20API%20data%20-%20simplified.pdf))
+
+To get this repo running locally:
+
+	git clone https://github.com/wgjm1986/AMM2019
+	cp .env.example .env
+
+...then add your FRED API key to .env, then
+
+	cd AMM2019
+	conda env create -f environment.yml
+	conda activate AMM2019
+	jupyter notebook
+
+...and then open and run any of the files.
